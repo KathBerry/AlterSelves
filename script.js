@@ -11,12 +11,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const personality = document.getElementById('personality').value;
         const nicknames = document.getElementById('nicknames').value;
         const sources = document.getElementById('sources').value;
+        const role = document.getElementById('role').value;
+        const characteristics = document.getElementById('characteristics').value;
         const imageInput = document.getElementById('image');
 
         const reader = new FileReader();
         reader.onload = () => {
             const image = reader.result;
-            saveAlter({ name, gender, pronouns, personality, nicknames, sources, image });
+            saveAlter({ name, gender, pronouns, personality, nicknames, sources, role, characteristics, image });
             displayAlters();
             alterForm.reset();
         };
@@ -24,7 +26,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         if (imageInput.files[0]) {
             reader.readAsDataURL(imageInput.files[0]);
         } else {
-            saveAlter({ name, gender, pronouns, personality, nicknames, sources, image: null });
+            saveAlter({ name, gender, pronouns, personality, nicknames, sources, role, characteristics, image: null });
             displayAlters();
             alterForm.reset();
         }
@@ -66,6 +68,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 <p><strong>Personality:</strong> ${alter.personality}</p>
                 <p><strong>Nicknames:</strong> ${alter.nicknames}</p>
                 <p><strong>Source(s):</strong> ${alter.sources}</p>
+                <p><strong>Role:</strong> ${alter.role}</p>
+                <p><strong>Characteristics:</strong> ${alter.characteristics}</p>
             `;
 
             const deleteBtn = document.createElement('button');
