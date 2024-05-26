@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlterSelves</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&family=Indie+Flower&family=Just+Another+Hand&family=Mali&family=Outfit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AlterSelves</h1>
+        <form id="alter-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" name="gender">
+            
+            <label for="pronouns">Pronouns:</label>
+            <input type="text" id="pronouns" name="pronouns">
+            
+            <label for="personality">Personality:</label>
+            <input type="text" id="personality" name="personality">
+            
+            <label for="nicknames">Nicknames:</label>
+            <input type="text" id="nicknames" name="nicknames">
+            
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" accept="image/*">
+            
+            <button type="submit">Save Alter</button>
+        </form>
+        <div id="alter-list"></div>
+    </div>
+    <footer>© 2024, bxrry system - by bxrry</footer>
+    <script src="script.js"></script>
+</body>
+</html>
