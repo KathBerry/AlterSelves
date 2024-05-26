@@ -10,12 +10,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const pronouns = document.getElementById('pronouns').value;
         const personality = document.getElementById('personality').value;
         const nicknames = document.getElementById('nicknames').value;
+        const sources = document.getElementById('sources').value;
         const imageInput = document.getElementById('image');
 
         const reader = new FileReader();
         reader.onload = () => {
             const image = reader.result;
-            saveAlter({ name, gender, pronouns, personality, nicknames, image });
+            saveAlter({ name, gender, pronouns, personality, nicknames, sources, image });
             displayAlters();
             alterForm.reset();
         };
@@ -23,7 +24,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         if (imageInput.files[0]) {
             reader.readAsDataURL(imageInput.files[0]);
         } else {
-            saveAlter({ name, gender, pronouns, personality, nicknames, image: null });
+            saveAlter({ name, gender, pronouns, personality, nicknames, sources, image: null });
             displayAlters();
             alterForm.reset();
         }
@@ -64,6 +65,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 <p><strong>Pronouns:</strong> ${alter.pronouns}</p>
                 <p><strong>Personality:</strong> ${alter.personality}</p>
                 <p><strong>Nicknames:</strong> ${alter.nicknames}</p>
+                <p><strong>Source(s):</strong> ${alter.sources}</p>
             `;
 
             const deleteBtn = document.createElement('button');
