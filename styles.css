@@ -21,6 +21,8 @@ body {
     border: 3px solid #ffb6c1; /* light pink border */
     max-width: 600px;
     width: 80%;
+    max-height: 90vh; /* Ensure container does not exceed viewport height */
+    overflow-y: auto; /* Add scroll if content overflows */
     animation: fadeIn 2s ease-in-out;
     margin-top: 20px; /* Adjusted margin to create space between header and content */
     margin-bottom: 20px; /* Adjusted margin to create space between content and footer */
@@ -51,6 +53,7 @@ input[type="text"], input[type="file"] {
     border: 1px solid #ddd;
     border-radius: 5px;
     width: 100%; /* Ensure inputs take full width of container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 button {
@@ -88,6 +91,9 @@ button:hover {
     max-width: 100px;
     max-height: 100px;
     border-radius: 50%;
+    border: 2px solid #ffb6c1; /* light pink border */
+    padding: 5px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .alter-info {
