@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Mali', sans-serif;
-    background-color: #ffe6f0; /* light pink background */
+    background-color: #f0e1f0; /* light pink background */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,10 +15,10 @@ body {
 .container {
     text-align: center;
     padding: 20px;
-    background-color: #fff0f5; /* lavender blush background */
+    background-color: #ecbfec; /* lavender blush background */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    border: 3px solid #ffb6c1; /* light pink border */
+    border: 3px solid #d6b6ff; /* light pink border */
     max-width: 600px;
     width: 80%;
     max-height: 90vh; /* Ensure container does not exceed viewport height */
@@ -30,7 +30,7 @@ body {
 
 h1 {
     font-family: 'Elsie', cursive;
-    color: #ff69b4; /* hot pink */
+    color: #c98afd; /* hot pink */
     font-size: 2.5em;
     margin-bottom: 20px;
     animation: slideIn 1.5s ease-in-out;
@@ -58,7 +58,7 @@ input[type="text"], input[type="file"] {
 
 button {
     font-family: 'Mali', sans-serif;
-    background-color: #ffb6c1; /* light pink */
+    background-color: #cf9bcf; /* light pink */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -71,7 +71,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff69b4; /* hot pink on hover */
+    background-color: #dc69ff; /* hot pink on hover */
 }
 
 #alter-list {
@@ -80,7 +80,7 @@ button:hover {
 
 .alter {
     background: #fffafa; /* snow white background */
-    border: 2px dashed #ffb6c1; /* light pink dashed border */
+    border: 2px dashed #e2b6ff; /* light pink dashed border */
     padding: 10px;
     margin-top: 10px;
     border-radius: 10px;
@@ -91,7 +91,7 @@ button:hover {
     max-width: 100px;
     max-height: 100px;
     border-radius: 50%;
-    border: 2px solid #ffb6c1; /* light pink border */
+    border: 2px solid #fdb6ff; /* light pink border */
     padding: 5px;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
@@ -107,7 +107,7 @@ button:hover {
 }
 
 .delete-btn {
-    background-color: #e57373;
+    background-color: #e57395;
     color: #fff;
     border: none;
     padding: 5px 10px;
@@ -123,7 +123,7 @@ button:hover {
 footer {
     margin-top: 20px;
     font-family: 'Mali', sans-serif;
-    color: #ff69b4; /* hot pink */
+    color: #f369ff; /* hot pink */
     animation: fadeIn 3s ease-in-out;
 }
 
